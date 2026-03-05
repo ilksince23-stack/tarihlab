@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TarihLab | Müzeler</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b1220;color:#eaf0ff}
+    .wrap{max-width:980px;margin:auto;padding:24px}
+    .box{background:#111a2e;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px;margin-top:12px}
+    h1{margin:0 0 6px;font-size:24px}
+    p{margin:0 0 10px;color:#9fb0d0;line-height:1.5}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    @media(max-width:820px){.grid{grid-template-columns:1fr}}
+    .card{background:#0f172a;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px}
+    .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid rgba(87,208,255,.45);background:rgba(87,208,255,.12);color:#eaf0ff;text-decoration:none;font-weight:700}
+    .small{font-size:12px;color:#9fb0d0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box">
+      <h1>🏛 Sanal Müzeler</h1>
+      <p>Bu sayfa üniteye göre sanal müze önerilerini listeler. En güvenlisi: “Yeni sekmede aç”.</p>
+      <a class="btn" href="index.html">⬅ Ana Sayfa</a>
+      <a class="btn" target="_blank" href="https://sanalmuze.gov.tr/" style="margin-left:8px">Resmî Portal</a>
+      <p class="small" style="margin-top:10px">Not: Bazı turlar iframe ile gömülmez, linkle açmak daha güvenlidir.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Selçuklu</h2>
+        <p class="small">Medrese, çini, kervansaray temaları</p>
+        <a class="btn" target="_blank" href="https://www.asyep360.com/karatay-muzesi/">Karatay Medresesi</a>
+      </div>
+
+      <div class="card">
+        <h2>Osmanlı Kuruluş</h2>
+        <p class="small">Kuruluş şehirleri (Bursa/Edirne) temaları</p>
+        <a class="btn" target="_blank" href="https://sanalmuze.gov.tr/">Portaldan Seç</a>
+      </div>
+
+      <div class="card">
+        <h2>Osmanlı Yükselme</h2>
+        <p class="small">Saray, Divan, fetih temaları</p>
+        <a class="btn" target="_blank" href="https://sanalmuze.gov.tr/">Portaldan Seç</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

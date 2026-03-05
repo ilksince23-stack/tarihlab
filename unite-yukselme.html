@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TarihLab | Osmanlı Yükselme (1453–1600)</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b1220;color:#eaf0ff}
+    .wrap{max-width:980px;margin:auto;padding:24px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+    .brand{font-weight:800;font-size:18px}
+    .nav a{color:#eaf0ff;text-decoration:none;border:1px solid rgba(255,255,255,.15);padding:8px 10px;border-radius:999px;margin-left:6px;display:inline-block}
+    .box{background:#111a2e;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px;margin-top:12px}
+    h1{margin:0 0 6px;font-size:26px}
+    h2{margin:0 0 6px;font-size:18px}
+    p{margin:0 0 10px;color:#9fb0d0;line-height:1.5}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}}
+    .card{background:#0f172a;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px}
+    .meta{font-size:13px;color:#9fb0d0}
+    .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid rgba(87,208,255,.45);background:rgba(87,208,255,.12);color:#eaf0ff;text-decoration:none;font-weight:700}
+    .btn.secondary{border-color:rgba(255,255,255,.15);background:rgba(255,255,255,.04)}
+    .task{background:rgba(245,199,106,.08);border:1px solid rgba(245,199,106,.25);border-radius:16px;padding:14px}
+    textarea{width:100%;height:120px;border-radius:10px;padding:10px;border:1px solid rgba(255,255,255,.15);background:#0b1220;color:#eaf0ff}
+    .timeline{display:grid;gap:8px;margin-top:8px}
+    .titem{padding:10px;border:1px solid rgba(255,255,255,.12);border-radius:12px;background:rgba(255,255,255,.03);color:#9fb0d0}
+    .quiz label{display:block;margin:8px 0;color:#9fb0d0}
+    button{padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:#111a2e;color:#eaf0ff;font-weight:700;cursor:pointer}
+    .result{margin-top:10px;color:#9fb0d0}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .chip{font-size:12px;color:#9fb0d0;border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.03)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">🏰 Osmanlı Yükselme (1453–1600)</div>
+      <div class="nav">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="muzeler.html">Müzeler</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <h1>Ünite Özeti</h1>
+      <p>
+        İstanbul’un Fethi (1453) Osmanlı Devleti’nin siyasi prestijini artırmış, stratejik ve ekonomik açıdan güç kazandırmıştır.
+        Fatih döneminde merkezî yapı güçlenmiş, Kanuni döneminde ise Osmanlı hem kara hem denizlerde etkili bir “dünya gücü”
+        haline gelmiştir. Divan-ı Hümayun ve tımar sistemi yönetim ve düzenin temel unsurlarıdır.
+      </p>
+
+      <div class="chips">
+        <span class="chip">1453 İstanbul’un Fethi</span>
+        <span class="chip">Divan-ı Hümayun</span>
+        <span class="chip">Tımar sistemi</span>
+        <span class="chip">Kanuni Dönemi</span>
+        <span class="chip">Merkezî otorite</span>
+      </div>
+
+      <h2 style="margin-top:12px">Basit Zaman Çizelgesi</h2>
+      <div class="timeline">
+        <div class="titem"><b>1453</b> — İstanbul’un Fethi: strateji, ekonomi ve prestij artışı.</div>
+        <div class="titem"><b>Fatih</b> — Merkezî yönetim güçlenir, hukuk ve teşkilat gelişir.</div>
+        <div class="titem"><b>Kanuni</b> — Siyasi/askeri zirve; kanunnameler, seferler, deniz gücü.</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h1>🏛 Müze / Sanal Tur Kartları (Yeni Sekmede Aç)</h1>
+      <p>Yükselme dönemi için “saray-yönetim-fetih” temalarını incele.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Resmî Sanal Müze Portalı</h2>
+          <p class="meta">Osmanlı eserleri ve tematik müzeler için en güvenli kaynak.</p>
+          <a class="btn" target="_blank" href="https://sanalmuze.gov.tr/">Portalı Aç</a>
+        </div>
+
+        <div class="card">
+          <h2>İstanbul’un Fethi Teması</h2>
+          <p class="meta">Fetih süreci, surlar, strateji ve sonuçları hakkında çıkarım yap.</p>
+          <a class="btn" target="_blank" href="https://sanalmuze.gov.tr/">Portaldan “İstanbul” Seç</a>
+        </div>
+
+        <div class="card">
+          <h2>Görev: Yönetim Analizi</h2>
+          <p class="meta">Divan ve merkezî yönetim bağlantısını kur.</p>
+          <a class="btn secondary" href="#gorev">Göreve Git</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box task" id="gorev">
+      <h1>📝 Müze İnceleme Görevi</h1>
+      <ol style="color:#9fb0d0;line-height:1.6">
+        <li>İncelediğin eser/alan (saray bölümü, yönetimle ilgili bir bölüm, kitabe vb.) nedir?</li>
+        <li>Bu eser/alan Osmanlı’nın merkezî yönetimini nasıl yansıtıyor? 2 çıkarım yaz.</li>
+        <li>İstanbul’un Fethi’nin Osmanlı’nın gücüne etkisini siyasi ve ekonomik yönleriyle ilişkilendir.</li>
+      </ol>
+      <p>Cevaplarını buraya yaz:</p>
+      <textarea placeholder="Cevaplarım..."></textarea>
+    </div>
+
+    <div class="box">
+      <h1>🎯 Mini Quiz</h1>
+      <p class="meta">1 soruluk hızlı kontrol.</p>
+
+      <p style="color:#9fb0d0;margin:0 0 8px"><b>1)</b> Divan-ı Hümayun’un temel görevi nedir?</p>
+      <div class="quiz">
+        <label><input type="radio" name="q1" value="A"> A) Köy vergilerini toplamak</label>
+        <label><input type="radio" name="q1" value="B"> B) Devlet işlerini görüşüp karar almak</label>
+        <label><input type="radio" name="q1" value="C"> C) Sadece deniz seferlerini planlamak</label>
+
+        <button onclick="grade()">Sonucu Göster</button>
+        <div class="result" id="res"></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <a class="btn secondary" href="unite-kurulus.html">⬅ Osmanlı Kuruluş</a>
+      <a class="btn secondary" href="index.html" style="margin-left:8px">Ana Sayfa</a>
+      <a class="btn" href="son-test.html" style="margin-left:8px">✅ Son Test</a>
+    </div>
+  </div>
+
+  <script>
+    function grade(){
+      const v = document.querySelector('input[name="q1"]:checked');
+      const el = document.getElementById('res');
+      if(!v){ el.textContent = "Lütfen bir seçenek işaretle."; return; }
+      el.textContent = (v.value === "B") ? "✅ Doğru! Divan devlet işlerinde karar organıdır." : "❌ Yanlış. Doğru cevap: B";
+    }
+  </script>
+</body>
+</html>
