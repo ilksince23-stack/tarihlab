@@ -1,51 +1,252 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>TarihLab | Müzeler</title>
-  <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b1220;color:#eaf0ff}
-    .wrap{max-width:980px;margin:auto;padding:24px}
-    .box{background:#111a2e;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px;margin-top:12px}
-    h1{margin:0 0 6px;font-size:24px}
-    p{margin:0 0 10px;color:#9fb0d0;line-height:1.5}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
-    @media(max-width:820px){.grid{grid-template-columns:1fr}}
-    .card{background:#0f172a;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px}
-    .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid rgba(87,208,255,.45);background:rgba(87,208,255,.12);color:#eaf0ff;text-decoration:none;font-weight:700}
-    .small{font-size:12px;color:#9fb0d0}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TarihLab | Sanal Müze Galerisi</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#0b1220;
+  color:white;
+}
+
+.wrap{
+  max-width:1100px;
+  margin:auto;
+  padding:30px;
+}
+
+.menu{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.menu a{
+  color:white;
+  text-decoration:none;
+  margin:6px;
+  padding:8px 14px;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:20px;
+  display:inline-block;
+}
+
+.menu a:hover{
+  background:#2b6cb0;
+}
+
+.hero{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.hero h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  color:#9fb0d0;
+  max-width:800px;
+  margin:auto;
+  line-height:1.6;
+}
+
+.section-title{
+  margin-top:35px;
+  margin-bottom:10px;
+  font-size:26px;
+}
+
+.section-text{
+  color:#9fb0d0;
+  margin-bottom:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+}
+
+.card{
+  background:#111a2e;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:16px;
+  padding:22px;
+}
+
+.card h3{
+  margin-top:0;
+  font-size:24px;
+}
+
+.card p{
+  color:#9fb0d0;
+  line-height:1.6;
+}
+
+.tag{
+  display:inline-block;
+  margin-top:8px;
+  margin-right:8px;
+  padding:6px 10px;
+  border-radius:14px;
+  background:rgba(255,255,255,.06);
+  color:#c7d4ee;
+  font-size:13px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:16px;
+  padding:10px 16px;
+  background:#2b6cb0;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+}
+
+.note{
+  margin-top:35px;
+  background:#111a2e;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:16px;
+  padding:20px;
+  color:#9fb0d0;
+  line-height:1.6;
+}
+
+.footer{
+  margin-top:40px;
+  text-align:center;
+  color:#9fb0d0;
+}
+
+@media (max-width:700px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="box">
-      <h1>🏛 Sanal Müzeler</h1>
-      <p>Bu sayfa üniteye göre sanal müze önerilerini listeler. En güvenlisi: “Yeni sekmede aç”.</p>
-      <a class="btn" href="index.html">⬅ Ana Sayfa</a>
-      <a class="btn" target="_blank" href="https://sanalmuze.gov.tr/" style="margin-left:8px">Resmî Portal</a>
-      <p class="small" style="margin-top:10px">Not: Bazı turlar iframe ile gömülmez, linkle açmak daha güvenlidir.</p>
+
+<div class="wrap">
+
+  <div class="menu">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="unite-selcuklu.html">Selçuklu</a>
+    <a href="unite-kurulus.html">Osmanlı Kuruluş</a>
+    <a href="unite-yukselme.html">Osmanlı Yükselme</a>
+    <a href="muzeler.html">Sanal Müzeler</a>
+    <a href="gorevler.html">Öğrenci Görevleri</a>
+  </div>
+
+  <div class="hero">
+    <h1>🏛 Sanal Müze Galerisi</h1>
+    <p>
+      Bu bölümde 10. sınıf tarih konularıyla ilişkili sanal müzeler yer almaktadır.
+      Öğrenciler ilgili üniteyi çalıştıktan sonra müzeleri gezebilir, gözlem yapabilir
+      ve görev sorularını cevaplayabilir.
+    </p>
+  </div>
+
+  <h2 class="section-title">Selçuklu ve Anadolu Türk Tarihi</h2>
+  <p class="section-text">Selçuklu mimarisi, çini sanatı, tasavvuf kültürü ve Anadolu'nun Türkleşme süreci ile ilgili müzeler.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🏛 Karatay Medresesi</h3>
+      <p>
+        Selçuklu çini sanatını ve medrese mimarisini incelemek için uygun bir sanal müze.
+        Özellikle Selçuklu kültürü ve eğitim anlayışıyla ilişkilendirilebilir.
+      </p>
+      <span class="tag">Selçuklu</span>
+      <span class="tag">Çini Sanatı</span>
+      <span class="tag">Medrese</span>
+      <br>
+      <a class="btn" href="https://www.asyep360.com/karatay-muzesi/" target="_blank">Müzeyi Gez</a>
     </div>
 
-    <div class="grid">
-      <div class="card">
-        <h2>Selçuklu</h2>
-        <p class="small">Medrese, çini, kervansaray temaları</p>
-        <a class="btn" target="_blank" href="https://www.asyep360.com/karatay-muzesi/">Karatay Medresesi</a>
-      </div>
-
-      <div class="card">
-        <h2>Osmanlı Kuruluş</h2>
-        <p class="small">Kuruluş şehirleri (Bursa/Edirne) temaları</p>
-        <a class="btn" target="_blank" href="https://sanalmuze.gov.tr/">Portaldan Seç</a>
-      </div>
-
-      <div class="card">
-        <h2>Osmanlı Yükselme</h2>
-        <p class="small">Saray, Divan, fetih temaları</p>
-        <a class="btn" target="_blank" href="https://sanalmuze.gov.tr/">Portaldan Seç</a>
-      </div>
+    <div class="card">
+      <h3>🕌 Mevlana Müzesi</h3>
+      <p>
+        Anadolu'da tasavvuf kültürü, Mevlevilik ve Selçuklu dönemi manevi hayatı üzerine
+        inceleme yapmak için kullanılabilir.
+      </p>
+      <span class="tag">Tasavvuf</span>
+      <span class="tag">Mevlana</span>
+      <span class="tag">Selçuklu</span>
+      <br>
+      <a class="btn" href="https://sanalmuze.gov.tr/" target="_blank">Müzeyi Gez</a>
     </div>
   </div>
+
+  <h2 class="section-title">Osmanlı Kuruluş ve Yükselme</h2>
+  <p class="section-text">Osmanlı Devleti'nin kuruluş, fetih, yönetim ve saray hayatıyla ilgili sanal müzeler.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🏰 Topkapı Sarayı</h3>
+      <p>
+        Osmanlı yönetim anlayışı, saray hayatı, Divan-ı Hümayun ve merkez teşkilatı hakkında
+        gözlem yapmak için kullanılabilir.
+      </p>
+      <span class="tag">Osmanlı</span>
+      <span class="tag">Saray</span>
+      <span class="tag">Yönetim</span>
+      <br>
+      <a class="btn" href="https://sanalmuze.gov.tr/" target="_blank">Müzeyi Gez</a>
+    </div>
+
+    <div class="card">
+      <h3>⚔ Panorama 1453</h3>
+      <p>
+        İstanbul'un Fethi konusunu işlerken öğrencilerin fetih sürecini daha somut
+        biçimde anlamalarına yardımcı olabilir.
+      </p>
+      <span class="tag">Fetih</span>
+      <span class="tag">1453</span>
+      <span class="tag">Osmanlı</span>
+      <br>
+      <a class="btn" href="https://www.panoramikmuze.com/" target="_blank">Müzeyi Gez</a>
+    </div>
+  </div>
+
+  <h2 class="section-title">Genel Sanal Müze Portalı</h2>
+  <p class="section-text">Farklı konular için müzeleri seçmek isteyen öğrenciler için genel erişim bağlantısı.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🌐 Türkiye Sanal Müze Portalı</h3>
+      <p>
+        Kültür ve Turizm Bakanlığı sanal müze portalı üzerinden farklı dönem ve temalardaki
+        müzelere erişilebilir.
+      </p>
+      <span class="tag">Resmî Portal</span>
+      <span class="tag">Farklı Müzeler</span>
+      <br>
+      <a class="btn" href="https://sanalmuze.gov.tr/" target="_blank">Portalı Aç</a>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>Nasıl kullanılmalı?</b><br><br>
+    Öğrenci önce ilgili üniteyi çalışmalı, ardından bu sayfadaki sanal müzeyi ziyaret etmelidir.
+    Müze gezisinden sonra “Öğrenci Görevleri” sayfasındaki soruları cevaplayarak gözlemlerini
+    yorumlamalıdır.
+  </div>
+
+  <div class="footer">
+    <p>Sanal müze destekli tarih öğrenme platformu</p>
+  </div>
+
+</div>
+
 </body>
 </html>
