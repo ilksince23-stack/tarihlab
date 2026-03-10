@@ -5,189 +5,256 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>TarihLab | Selçuklu Türkiyesi</title>
   <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b1220;color:#eaf0ff}
-    .wrap{max-width:980px;margin:auto;padding:24px}
-    .top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-    .brand{font-weight:800;font-size:18px}
-    .nav a{color:#eaf0ff;text-decoration:none;border:1px solid rgba(255,255,255,.15);padding:8px 10px;border-radius:999px;margin-left:6px;display:inline-block}
-    .box{background:#111a2e;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px;margin-top:12px}
-    h1{margin:0 0 6px;font-size:26px}
-    h2{margin:0 0 6px;font-size:18px}
-    p{margin:0 0 10px;color:#9fb0d0;line-height:1.5}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
-    @media(max-width:900px){.grid{grid-template-columns:1fr}}
-    .card{background:#0f172a;border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px}
-    .meta{font-size:13px;color:#9fb0d0}
-    .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid rgba(87,208,255,.45);background:rgba(87,208,255,.12);color:#eaf0ff;text-decoration:none;font-weight:700}
-    .btn.secondary{border-color:rgba(255,255,255,.15);background:rgba(255,255,255,.04)}
-    .task{background:rgba(245,199,106,.08);border:1px solid rgba(245,199,106,.25);border-radius:16px;padding:14px}
-    textarea{width:100%;height:120px;border-radius:10px;padding:10px;border:1px solid rgba(255,255,255,.15);background:#0b1220;color:#eaf0ff}
-    .timeline{display:grid;gap:8px;margin-top:8px}
-    .titem{padding:10px;border:1px solid rgba(255,255,255,.12);border-radius:12px;background:rgba(255,255,255,.03);color:#9fb0d0}
-    .quiz label{display:block;margin:8px 0;color:#9fb0d0}
-    button{padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:#111a2e;color:#eaf0ff;font-weight:700;cursor:pointer}
-    .result{margin-top:10px;color:#9fb0d0}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      background:#0b1220;
+      color:#eaf0ff;
+    }
+    .wrap{
+      max-width:1000px;
+      margin:auto;
+      padding:30px;
+    }
+    .menu{
+      text-align:center;
+      margin-bottom:20px;
+    }
+    .menu a{
+      color:white;
+      text-decoration:none;
+      margin:6px;
+      padding:8px 14px;
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:20px;
+      display:inline-block;
+    }
+    .menu a:hover{
+      background:#2b6cb0;
+    }
+    .top{
+      text-align:center;
+      margin-bottom:25px;
+    }
+    .brand{
+      font-size:34px;
+      font-weight:bold;
+      margin-bottom:10px;
+    }
+    .subtitle{
+      color:#9fb0d0;
+      line-height:1.7;
+      max-width:800px;
+      margin:auto;
+    }
+    .box{
+      background:#111a2e;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:16px;
+      padding:20px;
+      margin-top:20px;
+    }
+    h1,h2{
+      margin-top:0;
+    }
+    p{
+      color:#9fb0d0;
+      line-height:1.7;
+    }
+    .timeline{
+      display:grid;
+      gap:10px;
+      margin-top:15px;
+    }
+    .titem{
+      padding:12px;
+      border-radius:12px;
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.10);
+      color:#d8e4ff;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:20px;
+    }
+    .card{
+      background:#0f172a;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:16px;
+      padding:18px;
+    }
+    .card h2{
+      font-size:22px;
+      margin-bottom:8px;
+    }
+    .tag{
+      display:inline-block;
+      margin-right:8px;
+      margin-bottom:8px;
+      padding:6px 10px;
+      border-radius:14px;
+      background:rgba(255,255,255,.06);
+      color:#c7d4ee;
+      font-size:13px;
+    }
+    .meta{
+      color:#9fb0d0;
+      line-height:1.6;
+    }
+    .btn{
+      display:inline-block;
+      margin-top:14px;
+      padding:10px 16px;
+      background:#2b6cb0;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+    }
+    .btn.secondary{
+      background:transparent;
+      border:1px solid rgba(255,255,255,.15);
+    }
+    .task{
+      background:rgba(245,199,106,.08);
+      border:1px solid rgba(245,199,106,.25);
+    }
+    ol{
+      color:#d8e4ff;
+      line-height:1.8;
+      padding-left:22px;
+    }
+    .footer{
+      margin-top:35px;
+      text-align:center;
+      color:#9fb0d0;
+    }
+    @media (max-width:900px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="top">
-      <div class="brand">🏛 Selçuklu Türkiyesi</div>   
 
-<h2>Selçuklu Zaman Çizelgesi</h2>
+<div class="wrap">
 
-<ul>
-<li>1040 — Büyük Selçuklu Devleti kuruldu</li>
-<li>1071 — Malazgirt Savaşı</li>
-<li>1096 — Haçlı Seferleri başladı</li>
-<li>1243 — Kösedağ Savaşı</li>
-  <div class="titem"><b>1176</b> — Miryokefalon: Anadolu'nun Türk yurdu olduğu kesinleşir.</div>
-</ul>
-      <div class="nav">
-        <a href="index.html">Ana Sayfa</a>
-        <a href="muzeler.html">Müzeler</a>
-      </div>
-    </div>
+  <div class="menu">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="unite-selcuklu.html">Selçuklu</a>
+    <a href="unite-kurulus.html">Osmanlı Kuruluş</a>
+    <a href="unite-yukselme.html">Osmanlı Yükselme</a>
+    <a href="muzeler.html">Sanal Müzeler</a>
+    <a href="gorevler.html">Öğrenci Görevleri</a>
+  </div>
 
-    <div class="box">
-      <h1>Ünite Özeti</h1>
-      <p>
-        Malazgirt (1071) sonrası Anadolu’da Türk varlığı güçlenir. Türkiye Selçukluları döneminde ticaret yolları korunur,
-        kervansaraylar yapılır. 1243 Kösedağ Savaşı’ndan sonra Moğol baskısı artar ve siyasi yapı zayıflar.
-      </p>
-
-      <h2 style="margin-top:10px">Basit Zaman Çizelgesi</h2>
-      <div class="timeline">
-        <div class="titem"><b>1071</b> — Malazgirt: Anadolu’da Türk hakimiyeti süreci hızlanır.</div>
-        <div class="titem"><b>12–13. yy</b> — Ticaret + kervansaraylar: yol güvenliği ve ekonomik canlılık.</div>
-        <div class="titem"><b>1243</b> — Kösedağ: Moğol etkisi artar, siyasi zayıflama başlar.</div>
-      </div>
-    </div>
-
-    <div class="box">
-      <h1>🏛 Sanal Müze Kartları (Yeni Sekmede Aç)</h1>
-      <p>Not: Bazı turlar sayfa içine gömülmez; bu yüzden linkle açıyoruz.</p>
-
-     <div class="grid">
-
-<div class="card">
-<h2>🏛 Karatay Medresesi</h2>
-
-<span class="tag">Selçuklu</span>
-<span class="tag">Çini Sanatı</span>
-
-<p class="meta">
-Selçuklu çini sanatının en önemli örneklerinden biridir.
-</p>
-
-<a class="btn"
-href="https://www.360tr.com/karatay-medresesi/"
-target="_blank">
-
-Müzeyi Gez
-
-</a>
-
-</div>
-
-<div class="card">
-
-<h2>🕌 İnce Minareli Medrese</h2>
-
-<span class="tag">Selçuklu</span>
-<span class="tag">Taş İşçiliği</span>
-
-<p class="meta">
-Selçuklu taş işçiliğinin en önemli mimari örneklerinden biridir.
-</p>
-
-<a class="btn"
-href="https://www.360tr.com/ince-minare-muzesi/"
-target="_blank">
-
-Müzeyi Gez
-
-</a>
-
-</div>
-
-<div class="card">
-
-<h2>🕋 Mevlana Müzesi</h2>
-
-<span class="tag">Tasavvuf</span>
-<span class="tag">Selçuklu Dönemi</span>
-
-<p class="meta">
-Selçuklu döneminde Konya'daki tasavvuf ve kültürel hayatı inceleyebilirsiniz.
-</p>
-
-<a class="btn"
-href="https://www.360tr.com/mevlana-muzesi/"
-target="_blank">
-
-Müzeyi Gez
-
-</a>
-
-</div>
-
-</div>
-      </div>
-    </div>
-
-   <div class="box task" id="gorev">
-  <h1>📝 Müze İnceleme Görevi</h1>
-  <p style="color:#9fb0d0; line-height:1.7;">
-    Sanal müzeyi ziyaret ettikten sonra aşağıdaki görev formunu doldurunuz.
-    Formda yapıların amacı, mimari özellikleri ve Selçuklu Devleti hakkında verdiği bilgilerle ilgili sorular bulunmaktadır.
-  </p>
-
-  <ol style="color:#9fb0d0;line-height:1.6">
-    <li>Gezdiğiniz yapı hangi amaçla yapılmış olabilir? İki gerekçe yazınız.</li>
-    <li>Gözlemlediğiniz iki mimari veya süsleme unsurunu yazınız.</li>
-    <li>Bu yapı Selçuklu Devleti’nin hangi yönünü göstermektedir?</li>
-  </ol>
-
-  <a class="btn" href="https://forms.gle/BfbYgQtsCCkgi33f9" target="_blank">
-    Görevi Gönder
-  </a>
-</div>
-
-    <div class="box">
-      <h1>🎯 Mini Quiz</h1>
-      <p class="meta">1 soruluk hızlı kontrol (siteye etkileşim katar).</p>
-
-      <p style="color:#9fb0d0;margin:0 0 8px"><b>1)</b> 1243 Kösedağ Savaşı’nın en önemli sonucu nedir?</p>
-      <div class="quiz">
-        <label><input type="radio" name="q1" value="A"> A) Bizans yıkıldı</label>
-        <label><input type="radio" name="q1" value="B"> B) Moğol baskısı arttı</label>
-        <label><input type="radio" name="q1" value="C"> C) Osmanlı kuruldu</label>
-
-        <button onclick="grade()">Sonucu Göster</button>
-        <div class="result" id="res"></div>
-      </div>
-    </div>
-
-    <div class="box">
-      <a class="btn secondary" href="index.html">⬅ Ana Sayfa</a>
-      <a class="btn" href="unite-kurulus.html" style="margin-left:8px">➡ Osmanlı Kuruluş</a>
+  <div class="top">
+    <div class="brand">🏛 Selçuklu Türkiyesi</div>
+    <div class="subtitle">
+      Bu bölümde Anadolu’nun Türkleşmesi, Selçuklu kültürü, mimarisi ve sanat anlayışı
+      sanal müzeler ve etkinlikler yoluyla incelenir.
     </div>
   </div>
 
-  <script>
-    function grade(){
-      const v = document.querySelector('input[name="q1"]:checked');
-      const el = document.getElementById('res');
-      if(!v){ el.textContent = "Lütfen bir seçenek işaretle."; return; }
-      el.textContent = (v.value === "B") ? "✅ Doğru! Kösedağ sonrası Moğol etkisi arttı." : "❌ Yanlış. Doğru cevap: B";
-    }
-  </script>
+  <div class="box">
+    <h1>Ünite Özeti</h1>
+    <p>
+      Selçuklular döneminde Anadolu’da Türk siyasi varlığı güçlenmiş, şehirleşme artmış,
+      ticaret yolları korunmuş ve medrese, cami, kervansaray gibi önemli yapılar inşa edilmiştir.
+      Bu yapılar eğitim, sanat, yönetim ve dini hayat hakkında önemli bilgiler verir.
+    </p>
+  </div>
+
+  <div class="box">
+    <h1>Selçuklu Zaman Çizelgesi</h1>
+    <div class="timeline">
+      <div class="titem"><b>1040</b> — Büyük Selçuklu Devleti kuruldu.</div>
+      <div class="titem"><b>1071</b> — Malazgirt Savaşı ile Anadolu’nun kapıları Türklere açıldı.</div>
+      <div class="titem"><b>1176</b> — Miryokefalon Savaşı ile Anadolu’nun Türk yurdu olduğu güçlendi.</div>
+      <div class="titem"><b>1243</b> — Kösedağ Savaşı sonrası Moğol etkisi arttı.</div>
+    </div>
+  </div>
+
+  <div class="box">
+    <h1>🏛 Selçuklu Sanal Müze Etkinliği</h1>
+    <p>
+      Aşağıdaki yapılardan birini seçerek inceleyiniz. Her biri Selçuklu dönemi mimarisi,
+      taş işçiliği, kültürü ve şehir hayatı hakkında bilgi verir.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h2>🕌 İnce Minareli Medrese</h2>
+        <span class="tag">Selçuklu</span>
+        <span class="tag">Taş İşçiliği</span>
+        <span class="tag">Medrese</span>
+        <p class="meta">
+          Selçuklu taş işçiliği ve mimari süslemeleri incelemek için uygundur.
+        </p>
+        <a class="btn" target="_blank" href="https://www.360konya.com/sanal-tur/ince-minare-muzesi/2011/1">
+          Müzeyi Gez
+        </a>
+      </div>
+
+      <div class="card">
+        <h2>🕋 Mevlana Müzesi</h2>
+        <span class="tag">Tasavvuf</span>
+        <span class="tag">Konya</span>
+        <span class="tag">Selçuklu Dönemi</span>
+        <p class="meta">
+          Selçuklu dönemi Konya’sındaki kültürel ve manevi hayatı incelemek için uygundur.
+        </p>
+        <a class="btn" target="_blank" href="https://www.360konya.com/sanal-tur/mevlana-muzesi">
+          Müzeyi Gez
+        </a>
+      </div>
+
+      <div class="card">
+        <h2>🕌 Sâhib Atâ Camii</h2>
+        <span class="tag">Selçuklu</span>
+        <span class="tag">Mimari</span>
+        <span class="tag">Süsleme</span>
+        <p class="meta">
+          Selçuklu dönemi mimari anlayışını ve süsleme özelliklerini görmek için uygundur.
+        </p>
+        <a class="btn" target="_blank" href="https://www.360konya.com/sanal-tur/sahib-ata-camii">
+          Müzeyi Gez
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="box task" id="gorev">
+    <h1>📝 Müze İnceleme Görevi</h1>
+    <p>
+      Sanal müzeyi ziyaret ettikten sonra aşağıdaki görev formunu doldurunuz.
+    </p>
+
+    <ol>
+      <li>Gezdiğiniz yapı hangi amaçla yapılmış olabilir? İki gerekçe yazınız.</li>
+      <li>Gözlemlediğiniz iki mimari veya süsleme unsurunu yazınız.</li>
+      <li>Bu yapı Selçuklu Devleti’nin hangi yönünü göstermektedir?</li>
+    </ol>
+
+    <a class="btn" href="https://forms.gle/BfbYgQtsCCkgi33f9" target="_blank">
+      Görevi Gönder
+    </a>
+  </div>
+
+  <div class="box">
+    <a class="btn secondary" href="index.html">⬅ Ana Sayfa</a>
+    <a class="btn secondary" href="gorevler.html">Öğrenci Görevleri</a>
+  </div>
+
+  <div class="footer">
+    Selçuklu ünitesi sanal müze destekli öğrenme sayfası
+  </div>
+
+</div>
+
 </body>
 </html>
-
-
-   
-
-
-
